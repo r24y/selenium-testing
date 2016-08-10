@@ -10,6 +10,7 @@ docker-compose up --timeout 1 --no-build -d
 
 # Run the tests
 docker-compose run webdriver npm start
+docker-compose run webdriver npm run wdio
 
 # Stop the services
 docker-compose kill

@@ -13,7 +13,7 @@ exports.config = {
     host: 'selenium',
     port: 4444,
     path: '/wd/hub',
-    
+
     //
     // ==================
     // Specify Test Files
@@ -24,7 +24,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        './test/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -130,7 +130,7 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/testrunner/reporters.html
     reporters: ['spec'],
-    
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
